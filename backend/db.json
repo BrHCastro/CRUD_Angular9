@@ -1,0 +1,37 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Henrique de Castro",
+      "email": "contato@henrthudor.com.br",
+      "document": "41192856866",
+      "address": "Av Ipanema, 5867",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "gender": "Masculino",
+      "last_update": "2021-02-17 10:25:55"
+    },
+    {
+      "id": 2,
+      "name": "Elen Crislaine Alves Castro",
+      "email": "elen.crislaine@outlook.com",
+      "document": "36469850866",
+      "address": "Av Ipanema, 5867",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "gender": "Feminino",
+      "last_update": "2021-02-17 10:27:55"
+    },
+    {
+      "name": "Ronaldo L Castro",
+      "email": "naldo.zangado67@gmail.com",
+      "document": "10987654321",
+      "address": "R Ariberti Fazzio, 340",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "gender": "Masculino",
+      "last_update": "2020-02-17 11:04:55",
+      "id": 3
+    }
+  ]
+}
