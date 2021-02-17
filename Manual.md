@@ -26,4 +26,4 @@ Criado com base no curso da **Cod3r** [Angular9 - Essencial](https://www.cod3r.c
     - Dentro do Content você terá um componente para título e/ou componente para crud *ex. ContentTitle, ContentProductCrud*.
     - Entre outros...
 
-![](/exemp/arvore_componentes.png);
+![](src="/exemp/arvore_componentes.png");
