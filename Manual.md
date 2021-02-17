@@ -25,5 +25,3 @@ Criado com base no curso da **Cod3r** [Angular9 - Essencial](https://www.cod3r.c
     - Dentro do Header você vai ter um componente de navegação *ex. Nav*
     - Dentro do Content você terá um componente para título e/ou componente para crud *ex. ContentTitle, ContentProductCrud*.
     - Entre outros...
-
-![](/exemp/arvore_componentes.png)
