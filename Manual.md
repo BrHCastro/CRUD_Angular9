@@ -62,3 +62,19 @@ Esse é o processo de Inicalização.
     }    
     ```
     - A partir do arquivo **TypeScript** é que o angular vai encontrar o *HTML* e *CSS*.
+
+* Organização Usando **Módulo**:
+    - O angular não organiza a aplicação apenas em componentes, ele tambem organiza por em *Módulos*, isto é, todos os componentes vão estar dentro de algum *módulo*. Seja um único módulo da aplicação ou organizar em diversos módulos.
+    - Quando criamos um componente dentro de um módulo temos a escolha de dizer se este componente ficara visivel fora do módulo ou será visivel apenas dentro do módulo.
+
+* Anatomia do **Módulo**:
+    - Em um único módulo teremos cinco atributos que são: *Declarations, Imports, Exports, Providers e Bootstrap*.
+    - Declarations: Vai declarar todos os *componentes, diretivas e pipes*.
+    - Para tornar um *componente, diretiva e pipe* visivel para fora do módulo temos que colocar este componente tambem dentro da parte onde temos o *Exports*
+    - Imports importará outros módulos. Pode ser um módulo da própria aplicação ou um módulo externo como uma bibliotéca de componentes, por exemplo.
+    - Providers é onde sera declarado os *services*
+    - Bootstrap é onde definimos o nosso componente que sera carregado no módulo inicial.
+
+* Organização Usando **Módulo**:
+    - AppModule: Bootstrap, Declarations, Imports.
+    - Modulos X,Y e Z: Declarations, Imports, Exports, Providers.
