@@ -41,9 +41,9 @@ Esse é o processo de Inicalização.
     ```
     <app-home></app-home>
     ```
-    Essa é a forma que temos para referenciar todo o código *HTML*, estilo e lógica criada para este componente.
+    *Essa é a forma que temos para referenciar todo o código HTML, estilo e lógica criada para este componente.*
 
-* Exemplo de um arquivo **TypeScript** do componente:
+    - Exemplo de um arquivo **TypeScript** do componente:
     ```
     import { Component, OnInit } from '@angular/core';
 
