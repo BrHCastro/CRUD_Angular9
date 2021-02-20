@@ -85,4 +85,10 @@ Esse é o processo de Inicalização.
     - Dentro da pasta **app**, onde temos o módulo criado, temos o arquivo de *routing*, *app.module* e o *component*.
 
 * HTML do AppComponent:
-    - 
+    - Neste projeto não teremos templates *inline*, então, no arquivo *app.component* o templete pré configurado sera apagado. No lugar de template e style sera colocado uma variável chada app.component.htm e este arquivo será criado dentro desta pasta.
+    - Observações: No arquivo *app.component* temos export class *AppComponent {title = 'frontend';}* e uma forma bacana de usar esta variavel no projeto é:
+    No arquivo app.component.html, por exemplo:
+    ```
+        <h2>Olá, meu título é {{ title }}</h2>
+    ```
+    Essa sintaxe chamamos de *double mustache*. Quando envolvemos o nome da variável com *double mustache {{ variável }}* ele vai interpretar e substituir pelo valor.
