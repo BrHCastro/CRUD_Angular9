@@ -78,3 +78,11 @@ Esse é o processo de Inicalização.
 * Organização Usando **Módulo**:
     - AppModule: Bootstrap, Declarations, Imports.
     - Modulos X,Y e Z: Declarations, Imports, Exports, Providers.
+
+* Conhecendo os Arquivos do Projeto:
+    - Por padrão o Angular usa o *TypeScript* e pra isso ele existe um arquivo de configuraçao **tsconfig.json** além desse tambem temos o arquivo angular.json que tambem é um arquivo de configuração e dentro dele faremos uma mudança... Em **inlineTemplete** mudar para *false* e **inlineStyle** também. Quando for criar os *componentes* o arquivo *html* e o arquivo de *estilo* estarão em arquivos separados. Quando deixamos como *inline* ele vai criar tudo em um arquivo só. Esta configuração é padrão quando instalamos o cli *minimal*.
+    - Arquivo **main.ts**. Aqui irá importar algumas coisas, mais o mais importante que tem dentro dele, é que ele vai carregar, por padrão o que ele chamou de *AppModule*, ou seja, o míodulo da nossa aplicação.
+    - Dentro da pasta **app**, onde temos o módulo criado, temos o arquivo de *routing*, *app.module* e o *component*.
+
+* HTML do AppComponent:
+    - 
