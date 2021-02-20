@@ -92,3 +92,50 @@ Esse é o processo de Inicalização.
         <h2>Olá, meu título é {{ title }}</h2>
     ```
     Essa sintaxe chamamos de *double mustache*. Quando envolvemos o nome da variável com *double mustache {{ variável }}* ele vai interpretar e substituir pelo valor.
+
+* Instalar os Componentes do Material:
+    - comando para instalar os componentes do *Material*:
+        Na pasta do projeto (frontend)...
+        ```
+        ng add @angular/material
+        ```
+* Componente Cabeçalho:
+    - Primeiramente criaremos o cabeçalho de forma simples. comando para instalar:
+        ```
+        ng g c components/template/header (g de generator e c de component)
+        ```
+    - Dentro do nosso app sera criado os seguintes arquivos...
+        ```
+        CREATE src/app/components/template/header/header.component.html (21 bytes)
+        CREATE src/app/components/template/header/header.component.ts (275 bytes)
+        CREATE src/app/components/template/header/header.component.css (0 bytes)
+        ```
+    - E vai atualizar o app.module.ts...
+        ```
+        UPDATE src/app/app.module.ts (604 bytes)
+        ```
+    - A partir disso o arquivo app.module.ts ficara assim...
+        ```
+            import { NgModule } from '@angular/core';
+            import { BrowserModule } from '@angular/platform-browser';
+
+            import { AppRoutingModule } from './app-routing.module';
+            import { AppComponent } from './app.component';
+            import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+            import { HeaderComponent } from './components/template/header/header.component';
+
+            @NgModule({
+            declarations: [
+                AppComponent,
+                HeaderComponent
+            ],
+            imports: [
+                BrowserModule,
+                AppRoutingModule,
+                BrowserAnimationsModule
+            ],
+            providers: [],
+            bootstrap: [AppComponent]
+            })
+            export class AppModule { }
+        ```
