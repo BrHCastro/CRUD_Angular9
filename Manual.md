@@ -139,3 +139,71 @@ Esse é o processo de Inicalização.
             })
             export class AppModule { }
         ```
+    - Em *app.component.html* podemos referenciar o header que foi criado. Existe um prefixo padrão para os componentes, ou seja, nossos componentes começam com o prefixo *app*. E como o nome do componente vai ser *header*, então usaremos...
+        ```
+        <app-header></app-header>
+        ```
+    - Criando um template para o *componente header*. Para inicar, precisamos importar a **ToolBar do Material** e para isso, ele vem de um módulo externo e iremos importar para nosso módulo *appModule*.
+    Dentro de appModule.ts
+    ```
+    import { MatToolbarModule } from '@angular/material/toolbar';
+    ```
+    - Apos importar o *Toolbar* temos que colocar essa referência dentro de imports...
+    ```
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule <<<<<<
+    ]
+    ```
+    - Agora podemos definir nosso template do header...
+    ```
+    (header.component.html)
+    
+    <mat-toolbar class="header mat-elevation-z4">
+    <span>
+        <a>
+            <h2>Analy<span>Sys</span> </h2>
+        </a>
+    </span>
+    <span class="title-group">
+        <a>
+            <i class="material-icons">
+                home
+            </i>
+            Aplicação CRUD
+        </a>
+    </span>
+    </mat-toolbar>
+
+    (header.component.css)
+
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .header a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header a > h2 {
+        font-size: 1.7rem;
+        font-family: 'Audiowide', cursive;
+    }
+
+    .header a > h2 > span {
+        color: #3f3f94;
+    }
+
+    .header .title-group {
+        padding-left: 25px;
+    }
+
+    .header .title-group i {
+        padding-right: 5px;
+    }
+    ```

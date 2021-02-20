@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header a > h2 {
+    font-size: 1.7rem;
+    font-family: 'Audiowide', cursive;
+}
+
+.header a > h2 > span {
+    color: #3f3f94;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+}
